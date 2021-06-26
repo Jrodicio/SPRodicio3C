@@ -1,0 +1,53 @@
+Crear una aplicación web que permita realizar un ABM (sobre el LocalStorage), de distintos ciudadanos. El
+objetivo es tener la siguiente funcionalidad:
+
+1- (2pts) Crear la siguiente jerarquía de clases en Typescript:
+    a. Persona: nombre(string), apellido(string) y edad(entero) como atributos. 
+                Un constructor que reciba tres parámetros. 
+                Un método, PersonaToString que retorne la representación de la clase en formato cadena.
+    b. Ciudadano: hereda de persona, posee como atributos dni(entero), país(string) y sexo(string). 
+                Un constructor para inicializar los atributos. 
+                Un método CiudadanoToJSON que retornará la representación del objeto en formato JSON. 
+                Se debe de reutilizar el método PersonaToString.
+
+2- (1pts) Crear la página index.html, la misma contendrá dos secciones:
+    a. Formulario de ingreso/modificación de datos
+    b. Listado de todos los ciudadanos y listado de ciudadanos filtrados.
+    c. Para el nombre, apellido, edad y dni se deberá utilizar input(text). Para país select y para el sexo input(radio)
+
+3- Crear la clase Manejadora que posea los siguientes métodos:
+
+4- (2pts) AgregarCiudadano.
+    Tomará los distintos valores desde la página index.html y creará y guardará en el LocalStorage a ese ciudadano.
+    El método debe poder almacenar ‘n’ ciudadanos.
+
+5- (1pts) MostrarCiudadanos.
+    Recuperará a todos los ciudadanos del LocalStorage y generará un listado dinámico que mostrará toda la información del ciudadano.
+    Agregar columnas que permitan: Eliminar y Modificar al ciudadano elegido.
+
+6- (1pts) EliminarCiudadano.
+    Eliminará al ciudadano del LocalStorage.
+    Refrescar el listado para visualizar los cambios.
+
+7- (2pts) ModificarCiudadanos.
+    Mostrará todos los datos del ciudadano y permitirá modificar cualquier campo.
+    Luego se guardarán los cambios en el LocalStorage. Refrescar el listado para visualizar los cambios.
+
+8- (1pts) Agregar botón filtrar por país.
+    Invocará al método FiltrarCiudadanoPorPais y retornará un listado completo de todos los ciudadanos según el país seleccionado.
+
+9- (2pts) Agregar botón obtener promedio de edad según sexo.
+    Invocará al método PromedioEdadPorSexo y retornará una tabla que muestre el sexo elegido y el promedio de edad.
+
+10- (2pts) Agregar botón filtrar por edad y sexo.
+    Invocará al método FiltrarCiudadanoPorEdadSexo y retornará un listado (nombre, apellido y dni) de todos los ciudadanos según lo seleccionado.
+
+IMPORTANTE:
+Se pueden bajar templates de internet o traer código hecho, pero en ningún caso se debe incluir código obsoleto o que no cumpla ninguna función dentro del parcial.
+Se tiene que sumar: 8  puntos para lograr un cuatro (04).
+                    9  puntos para lograr un cinco  (05).
+                    10 puntos para lograr un seis   (06).
+                    11 puntos para lograr un siete  (07).
+                    12 puntos para lograr un ocho   (08).
+                    13 puntos para lograr un nueve  (09).
+                    14 puntos para lograr un diez   (10).
